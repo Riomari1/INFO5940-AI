@@ -1,3 +1,6 @@
+Note: Added chromadb==1.2.2 to requirements.txt for semantic retrieval.
+
+
 # INFO 5940 
 Welcome to the INFO 5940 repository. You will complete your work using [**GitHub Codespaces**](#about-github-codespaces) and save your progress in your own GitHub repository. This guide will walk you through setting up the development environment and running the test notebook.  
 
