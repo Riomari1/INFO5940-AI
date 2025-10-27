@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from openai import OpenAI
-from typing import List, Dict, Tuple
+from typing import List, Dict
 from pypdf import PdfReader
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -278,4 +278,4 @@ if question and uploaded_files:
     st.session_state.messages.append({"role": "assistant", "content": response})
     with st.expander("Show sources"):
         for c in top_chunks:
-            st.markdown(f"- `{"%s#%s" % (c['source'], c['chunk_id'])}`")
+            st.markdown(f"- `{c['source']}#{c['chunk_id']}`")

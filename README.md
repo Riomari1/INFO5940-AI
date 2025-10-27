@@ -1,5 +1,5 @@
 Note: Added chromadb==1.2.2 to requirements.txt for semantic retrieval.
-
+Note: Changed pandas in req.txt to also include numpy because of a binary compatibility issue numpy==1.26.4 pandas==2.2.2
 
 # INFO 5940 
 Welcome to the INFO 5940 repository. You will complete your work using [**GitHub Codespaces**](#about-github-codespaces) and save your progress in your own GitHub repository. This guide will walk you through setting up the development environment and running the test notebook.  
