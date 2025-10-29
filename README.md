@@ -4,10 +4,17 @@ Note: I found the GitHub Secrets setup unclear, so I chose not to include my API
 
 ## Instructions for running application
 In your terminal run:
+```bash
 pip install -r requirements.txt
-export API_KEY="your_actual_API_KEY"
-streamlit run chat_with_pdf.py
+```
+```bash
 
+export API_KEY="your_actual_API_KEY"
+```
+```bash
+
+streamlit run chat_with_pdf.py
+```
 ## Features
 Features Overview
 1. Dynamic Document Chunking
