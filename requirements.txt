@@ -7,6 +7,7 @@ pydantic  # 2.12.0
 s3fs
 streamlit>=1.36
 tiktoken==0.7.0
+chromadb==1.2.2
 
 #langchain
 langchain-community==0.3.31
