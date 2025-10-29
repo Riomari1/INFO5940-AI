@@ -1,5 +1,54 @@
 Note: Added chromadb==1.2.2 to requirements.txt for semantic retrieval.
 Note: Changed pandas in req.txt to also include numpy because of a binary compatibility issue numpy==1.26.4 pandas==2.2.2
+Note: I found the GitHub Secrets setup unclear, so I chose not to include my API key to be safe.
+
+## Instructions for running application
+In your terminal run:
+pip install -r requirements.txt
+export API_KEY="your_actual_API_KEY"
+streamlit run chat_with_pdf.py
+
+## Features
+Features Overview
+1. Dynamic Document Chunking
+
+Automatically adjusts chunk size based on total document length.
+
+Small documents → larger chunks for deeper context.
+
+Large documents → smaller chunks for speed and efficiency.
+
+Manual override through sidebar controls.
+
+2. File Support
+
+Accepts .pdf, .txt, and .md documents.
+
+Uses PyPDF for text extraction with robust error handling.
+
+3. Flexible Retrieval Options
+
+Built-in fallback retriever (token-overlap scoring).
+
+LangChain integration with Chroma vectorstore and OpenAI embeddings when dependencies are available.
+
+Adjustable “Top K” slider controls how many document chunks are retrieved for each query.
+
+4. Interactive Streamlit Interface
+
+File upload panel and customizable chunking settings.
+
+Persistent chat history for follow-up questions.
+
+“Show sources” expander to view document provenance for each response.
+
+Option to reset or rebuild the in-memory index anytime.
+
+5. Transparent Query Processing
+
+Every response includes only text grounded in the retrieved document sources.
+
+If no relevant information is found, the assistant explicitly says so.
 
 # INFO 5940 
 Welcome to the INFO 5940 repository. You will complete your work using [**GitHub Codespaces**](#about-github-codespaces) and save your progress in your own GitHub repository. This guide will walk you through setting up the development environment and running the test notebook.  
