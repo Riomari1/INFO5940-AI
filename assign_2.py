@@ -191,14 +191,14 @@ Constraints
 
 reviewer_agent = Agent(
     name="Reviewer Agent",
-    model="openai.gpt-4o",
+    model="openai.gpt-4o-mini",
     instructions=REVIEWER_INSTRUCTIONS.strip(),
     tools=[internet_search]
 )
 
 planner_agent = Agent(
     name="Planner Agent",
-    model="openai.gpt-4o",
+    model="openai.gpt-4o-mini",
     instructions=PLANNER_INSTRUCTIONS.strip(),
 )
 
