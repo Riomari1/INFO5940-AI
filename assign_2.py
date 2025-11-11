@@ -138,14 +138,18 @@ Goals
 - Use internet_search for any claims that are uncertain, time-sensitive, or
   location-specific. Summarize relevant findings concisely with sources.
 - Propose precise improvements as a Delta List: bullet points of changes with a
-  short reason. Don’t rewrite the whole plan; only list targeted edits.
+  short reason.
+- Final output includes Revised Itinerary, Validation Summary, Delta List, and
+  Notes & Assumptions.
 
 Style and Output Format
-1) “Validation Summary” — 4–8 bullets of key checks and findings.
-2) “Delta List” — bullets; each bullet starts with “Change:” and includes where
+1) “Revised Itinerary” — rewrite the plan incorporating the validated fixes.
+   Keep the same structure as the Planner (Day 1, Day 2, etc.).
+2) “Validation Summary” — 4–8 bullets of key checks and findings.
+3) “Delta List” — bullets; each bullet starts with “Change:” and includes where
    (day/time/place), what to change, and a brief reason (with a quick citation
    to your search summary if applicable).
-3) “Notes & Assumptions” — any pragmatic assumptions you made.
+4) “Notes & Assumptions” — any pragmatic assumptions you made.
 
 Constraints
 - Be specific and actionable. Prefer concrete changes (adjust time/location,
