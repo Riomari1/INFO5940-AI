@@ -1,1 +1,11 @@
+Reflection Log
 
+Working on this multi-agent travel planner clarified how system prompt design defines the relationship between cooperating models. I learned how to make each agent’s role distinct yet complementary: the Planner generates structure and detail from an ambiguous travel request, while the Reviewer validates feasibility and realism. Writing the prompts required thinking about scope boundaries, tone, and precision. I noticed that subtle phrasing changes could shift whether the Planner produced concise overviews or overly long narratives, and whether the Reviewer focused on logistics or general critique.
+
+The implementation also strengthened my understanding of multi-agent orchestration inside Streamlit. Testing the Planner → Reviewer flow showed how asynchronous calls, structured outputs, and logging interact. Watching the internet_search tool record events live in the sidebar helped me visualize tool activity and debug in real time. It also reinforced the importance of transparency, since users could literally see each factual check being performed.
+
+One of the trickiest design choices involved balancing the assignment rubric with the user interface. Because the UI hides the Planner’s raw output, users only see the Reviewer’s text by default. To keep the experience intuitive, I extended the Reviewer’s prompt to include a short “Revised Itinerary” section following its Delta List. This lets the Reviewer summarize improvements while still demonstrating validation and factual reasoning, preserving the two-agent workflow that the assignment emphasizes.
+
+Overall, the project taught me how multi-agent workflows demand both structural design and clear instructional language. The process felt similar to designing collaboration between real people: each agent needed context, ownership, and trust boundaries.
+
+External tools: I used ChatGPT and OpenAI Codex to help validate and draft my prompt templates. They assisted with wording consistency, section ordering, and confirming proper placement inside assign_2.py, but all final logic, formatting, and reasoning decisions were my own.
